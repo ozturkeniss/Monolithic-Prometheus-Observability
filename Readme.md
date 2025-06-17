@@ -2,6 +2,9 @@
 
 A comprehensive demonstration of observability practices in a Go microservice using Prometheus, Grafana, and AlertManager.
 
+![image](https://github.com/user-attachments/assets/c61eb09e-1960-40f7-b11b-b14a0d427af5)
+
+
 ## Project Overview
 
 This project demonstrates a complete observability stack for a Go microservice, including:
