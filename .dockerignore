@@ -1,0 +1,70 @@
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Docker files
+.dockerignore
+docker-compose*.yml
+Dockerfile*
+
+# Development files
+*.md
+!README.md
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Build artifacts
+bin/
+dist/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Dependencies
+vendor/
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+*.crt
+
+# Logs
+*.log
+logs/
+
+# Test files
+*_test.go
+test/
+tests/
+
+# Documentation
+docs/
+*.pdf
+*.doc
+*.docx
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Kubernetes files
+k8s/
+*.kubeconfig
+
+# Debug files
+debug
+debug.test
+
+# Local development
+docker-compose.override.yml 

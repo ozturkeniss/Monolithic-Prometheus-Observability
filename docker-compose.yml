@@ -1,0 +1,34 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:15
+    container_name: monoproductdb
+    environment:
+      POSTGRES_DB: monoproductdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  productservice:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: productservice
+    environment:
+      - PORT=8080
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - DB_NAME=monoproductdb
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    restart: on-failure
+
+volumes:
+  pgdata: 
