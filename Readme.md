@@ -1,6 +1,6 @@
 # Go Observability Demo
 
-A comprehensive demonstration of observability practices in a Go microservice using Prometheus, Grafana, and AlertManager.
+A comprehensive demonstration of observability practices in a Go service using Prometheus, Grafana, and AlertManager.
 
 ![image](https://github.com/user-attachments/assets/c61eb09e-1960-40f7-b11b-b14a0d427af5)
 
